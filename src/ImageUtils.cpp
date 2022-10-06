@@ -17,6 +17,8 @@ QImage* ImageUtils::buildKernelImage(const FocusBlur* focusBlur) {
     kernelPainter.setRenderHint(QPainter::Antialiasing);
     kernelPainter.setBrush(QBrush(Qt::white));
 
+//edit by mkdaniil rep5
+
     // Draw circle
     kernelPainter.drawEllipse(QPointF(0.5+kernelImage->width()/2.0, 0.5+kernelImage->height()/2.0), radius, radius);
     kernelPainter.end();
